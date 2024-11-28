@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .cal {
+      border: 3px solid;
+      height: 550px;
+      display: grid;
+      background-color:black ;
+      grid-template-columns: repeat(4, 90px);
+      row-gap: 10px;
+      column-gap: 10px;
+      border-radius: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      
+      
+    }
+    .cal div {
+      background-color:white;
+      text-align: center;
+      border-radius: 20px;
+    }
+    .val{
+      grid-column: 1/5;
+      height: 200px;
+    
+    
+    }
+    .cal div:hover{
+      background-color: rebeccapurple;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="cal">
+      <div class="val" style="background-color:white; padding:10px; align-content: center;"></div>
+      <div class="num1"><h2>1</h2></div>
+      <div class="num2"><h2>2</h2></div>
+      <div class="num3"><h2>3</h2></div>
+      <div class="add" style="background-color:orange;"><h2>+</h2></div>
+      <div class="num4"><h2>4</h2></div>
+      <div class="num5"><h2>5</h2></div>
+      <div class="num6"><h2>6</h2></div>
+      <div class="sub" style="background-color:orange;"><h2>-</h2></div>
+      <div class="num7"><h2>7</h2></div>
+      <div class="num8"><h2>8</h2></div>
+      <div class="num9"><h2>9</h2></div>
+      <div class="mul" style="background-color:orange;"><h2>x</h2></div>
+      <div class="div" style="background-color:orange;"><h2>%</h2></div>
+      <div class="num0"><h2>0</h2></div>
+      <div class="pnt"style="background-color:orange;"><h2>.</h2></div>
+      <div class="eql" style="background-color:orange;"><h2>=</h2></div>
+    </div>
+  </body>
+</html>
